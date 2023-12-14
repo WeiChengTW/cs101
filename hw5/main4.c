@@ -2,7 +2,7 @@
 
 int main()
 {
-    int num = 1; // 126453
+    int num = 123456; // 126453
     // printf("num=%d\n", num);
     int more_thousand = num - (num % 10000);
     int thousands = num / 1000 % 10;
