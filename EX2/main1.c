@@ -4,10 +4,10 @@ int main()
 {
     int i=10;
     if(i&(i-1)){
-        printf("false");
+        printf("true");
     }
     else{
-        printf("true");
+        printf("false");
     }
     return 0;
 }
