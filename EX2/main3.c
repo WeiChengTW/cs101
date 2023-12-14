@@ -4,10 +4,10 @@ int main()
 {
     int i=3;
     if(i&1){
-        printf("false");
+        printf("奇數");
     }
     else {
-        printf("true");
+        printf("偶數");
     }
     return 0;
 }
