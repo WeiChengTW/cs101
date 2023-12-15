@@ -1,17 +1,27 @@
 #include <stdio.h>
 
-int main(){
-    double PI=0.0;
-    for(int i=0;i<1000000;i++){
-        double sum=1.0/(2*i+1);
-        if(i%2==0){
-            PI+=sum;
+int main()
+{
+    int x = 1; // 初始化 x 为整数
+    double pi = 0.0;
+
+    while ((int)(pi * 100000) != 314159)
+    {
+        double term = 4.0 / (2 * x - 1);
+        if (x % 2 == 1)
+        {
+            pi += term;
         }
-        else{
-            PI-=sum;
+        else
+        {
+            pi -= term;
         }
+
+        x++;
     }
-    PI*=4;
-    printf("%.5f",PI);
+    printf("X= %d\n", x);
+    // printf("Pi= %.6f\n", pi);
+    // printf("100000Pi= %d\n", (int)(pi * 100000));
     return 0;
 }
+
