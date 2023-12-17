@@ -2,7 +2,7 @@
 
 int main()
 {
-    int x = 1; // 初始化 x 为整数
+    int x = 1; 
     double pi = 0.0;
 
     while ((int)(pi * 100000) != 314159)
